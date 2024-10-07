@@ -63,10 +63,9 @@ function showCurrentTime() {
     });
 }
 document.addEventListener('DOMContentLoaded', function () {
-    // Set the initial background image
+
     document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;
 
-    // Add event listeners
     document.getElementById('searchButton').addEventListener('click', apiSearch);
     document.getElementById('timeButton').addEventListener('click', showCurrentTime);
     document.getElementById('searchEngineName').addEventListener('click', changeBackgroundImage);
